@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 * {
   padding:0;
   margin:0;
@@ -13,9 +11,7 @@ body{
 img {
   width:100%;
 }
-=======
-=======
->>>>>>> 34a78dbb6fbc34631d539f58065dcee776ad3f4a
+
 header{
   max-width: 98%;
     padding: 1%;
@@ -26,44 +22,29 @@ header{
   -webkit-box-sizing: border-box;
 }
 
-<<<<<<< HEAD
->>>>>>> 34a78dbb6fbc34631d539f58065dcee776ad3f4a
-=======
->>>>>>> 34a78dbb6fbc34631d539f58065dcee776ad3f4a
 #main{
   width: 58%;
   padding: 1%;
   margin: 1%;
   height: 400px;
   float: left;
-<<<<<<< HEAD
-<<<<<<< HEAD
   border: 1px solid red;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-=======
-=======
->>>>>>> 34a78dbb6fbc34631d539f58065dcee776ad3f4a
   background-color: red;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box
 }
 
-<<<<<<< HEAD
->>>>>>> 34a78dbb6fbc34631d539f58065dcee776ad3f4a
-=======
->>>>>>> 34a78dbb6fbc34631d539f58065dcee776ad3f4a
 #side{
   width: 38%;
   padding: 1%;
   margin: 1%;
   height: 400px;
   float: right;
-<<<<<<< HEAD
-<<<<<<< HEAD
   border: 1px solid red;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
