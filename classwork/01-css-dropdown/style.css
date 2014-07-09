@@ -42,7 +42,8 @@ body{
   visibility:hidden;
   opacity: 0;
   transition: visibility 0s linear 1s, opacity 1s linear;
-  -webkit-transition: visibility 0s linear 1s;
+  -webkit-transition: visibility 0s linear 1s, opacity 1s linear;
+  
 }
 
 #main-menu ul li:hover ul{
