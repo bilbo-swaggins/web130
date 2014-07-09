@@ -33,11 +33,7 @@ header{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-  background-color: red;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box
-}
+
 
 #side{
   width: 38%;
@@ -46,6 +42,7 @@ header{
   height: 400px;
   float: right;
   border: 1px solid red;
+  background-color:light
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;  
