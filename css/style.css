@@ -69,22 +69,61 @@ ol {
 nav {
   background-color:white;
   margin-top:10px;
+  width:100%;
+  clear:both;
+  height:38px;
+  background:#778899;
 }
-nav ul {
-  padding:0;
+#main-menu ul{
+  list-style-type:none;
+  padding-left:0;
   text-align:center;
+
 }
-nav ul li{
-  display:inline;
+
+#main-menu li {
+  float:left;
 }
-nav a:link, nav a:visited {
-  font-size:1.25em;
-  line-height:200%;
-  padding:0 2.5%;
+
+#main-menu li a{
+
   text-decoration:none;
+  padding:10px 20px;
+  display:block;
 }
-nav a:focus, nav a:hover {
-  color:red;
+
+#main-menu li a:hover{
+  background: skyblue;
+  color:black;
+}
+
+
+
+/* Sub menu Styles */
+
+#main-menu ul li ul{
+  position:absolute;
+  visibility:hidden;
+  opacity: 0;
+  transition: visibility 0s linear .25s, opacity .25s linear;
+  -webkit-transition: visibility 0s linear .25s, opacity .25s linear;
+  
+}
+
+#main-menu ul li:hover ul{
+  visibility:visible;
+  opacity: 1;
+  transition-delay: 0s;
+  -webkit-transition-delay:0s;
+}
+
+#main-menu ul li ul li{
+  float:none;
+  background:#778899;
+}
+
+#main-menu ul li ul li:hover{
+  background:magenta;
 }
 
 /* About */
