@@ -1,7 +1,5 @@
-* {
-  padding:0;
-  margin:0;
-}
+@mainColor:#0EC1DE;
+
 
 body{
   font-size:100%;
@@ -28,7 +26,7 @@ header{
   margin: 1%;
   height: 400px;
   float: left;
-  border: 1px solid red;
+  border: 1px solid @mainColor;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -105,7 +103,7 @@ nav {
   position:absolute;
   visibility:hidden;
   opacity: 0;
-  transition: visibility 0s linear .25s, opacity .25s linear;
+  transition: visibility 0s linear .25cs, opacity .25s linear;
   -webkit-transition: visibility 0s linear .25s, opacity .25s linear;
   
 }
@@ -173,22 +171,6 @@ footer{
 /*  end of media query  */
 }
 
-  background-color: blue;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box
-}
-
-footer{
-  max-width: 98%;
-    padding: 1%;
-    margin: 1%;
-    border: solid 1px black;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    clear: both;
-}
 
 @media all and (max-width: 768px) and (min-width: 461px) {
   #main{
