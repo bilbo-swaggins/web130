@@ -1,0 +1,65 @@
+@main: #324359;
+@secondary: #A64962;
+@background: #E8C380;
+@link: #A0EFFF;
+@hover: #BFA58E;
+
+
+
+/* Mixins */
+.borderBox {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.border{
+  border:1px solid black;
+}
+
+/* Base Styles */
+*{
+  padding:0;
+  margin:0;
+}
+
+body{
+  font-size:100%;
+  position:relative;
+  background-color:@background;
+  font:sans-serif;
+}
+
+img {
+  width:100%;
+}
+
+ul {
+    padding-left: 1.25em;
+}
+
+ol {
+    padding-left: 2.25em;
+} 
+
+p{
+  line-height:150%;
+  color:grey;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-bottom:10px;
+}
+
+a:link, a:visited{
+  text-decoration:none;
+  color:@link;
+}
+
+a:hover, a:focus{
+  text-decoration:underline;
+  background-color:#BFA58E;
+  color:@hover;
+}
+
+

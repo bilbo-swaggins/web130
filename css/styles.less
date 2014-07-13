@@ -1,21 +1,15 @@
-@main: lightblue;
-body{
-  font-size:100%;
-  position:relative;
-}
+@import "boilerplate.less";
 
-img {
-  width:100%;
-}
+
+
+
 
 header{
   max-width: 98%;
     padding: 1%;
     margin: 1%;
-    border: solid 1px black;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+    .borderBox;
+
 }
 
 #main{
@@ -24,10 +18,8 @@ header{
   margin: 1%;
   height: 400px;
   float: left;
-  border: 1px solid red;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  .border;
+  .borderBox;
 }
 
 
@@ -37,62 +29,50 @@ header{
   margin: 1%;
   height: 400px;
   float: right;
-  border: 1px solid red;
-
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;  
+  border: 1px solid black;
+  .borderBox; 
 }
 header,footer{
   clear:both;
   width:98%;
   margin:1%;
   padding:1%;
-  background:@main;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box; 
+  background:@background;
+  .borderBox;
+  .border;
+}
+header h1, header h2{
+  padding-left:20px;
 }
 
-ul {
-    padding-left: 1.25em;
-}
 
-ol {
-    padding-left: 2.25em;
-} 
 /* Nav */
 nav {
-  background-color:white;
   margin-top:10px;
   width:100%;
   clear:both;
-  height:38px;
-  background:#778899;
+  background:;
 }
 #main-menu ul{
   list-style-type:none;
   padding-left:0;
   text-align:center;
+  overflow:hidden;
 
+  li {
+    float:left;
+    .borderBox;
+    
+    a {
+      font-size:1.5em;
+      text-decoration:none;
+      padding:10px 20px;
+      display:block;
+    }  
+  }
 }
 
-#main-menu li {
-  float:left;
-}
-
-#main-menu li a{
-
-  text-decoration:none;
-  padding:10px 20px;
-  display:block;
-}
-
-#main-menu li a:hover{
-  background: skyblue;
-  color:black;
-}
-
+      
 
 
 /* Sub menu Styles */
@@ -103,6 +83,8 @@ nav {
   opacity: 0;
   transition: visibility 0s linear .25cs, opacity .25s linear;
   -webkit-transition: visibility 0s linear .25s, opacity .25s linear;
+
+  
   
 }
 
@@ -111,15 +93,17 @@ nav {
   opacity: 1;
   transition-delay: 0s;
   -webkit-transition-delay:0s;
+  backgound-color:@hover;
+  
 }
 
 #main-menu ul li ul li{
   float:none;
-  background:#778899;
+  background:lighten(@hover,20%);
 }
 
 #main-menu ul li ul li:hover{
-  background:magenta;
+  color:@hover;
 }
 
 /* About */
@@ -128,7 +112,6 @@ nav {
   width:25%;
   margin:0 auto;
   height:auto;
-  background-color:blue;
   float:left;
 }
 .about p{
@@ -137,9 +120,7 @@ nav {
 }
 
 @media all and (min-width:481px) and (max-width:779px) {
-  body{
-    background:skyblue;
-  }
+
     footer{
     position:absolute;
     bottom:0;
