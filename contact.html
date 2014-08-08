@@ -1,51 +1,150 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Eric Willis</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet/less" type="text/css" href="css/styles.less" >
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>  
-    <script>
-  var name = prompt('Whats your name?','');
-    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Me</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      #email {
+        margin-bottom:10px;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Hello World</h1>
-      <h2>Eric & Eric</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-md-5">
+        <h1>Jquery Validation</h1>
+        <form role="form">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter Your Address">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <select class="form-control" id="city">
+              <option value="seattle">Seattle</option>
+              <option value="renton">Renton</option>
+              <option value="kent">Kent</option>
+              <option value="everett">Everett</option>
+              <option value="other">Other</option>          
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+            <input type="email" class="form-control" ide="email2" placeholder="Verify Email">
+          </div>
+          <div class="form-group">
+            <label>Pets</label><br/>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="cats" value="cats"> Cats
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="dogs" value="dogs"> Dogs
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="other"> Other
+            </label>
+          </div>
+          <div class="form-group">
+            <label>Do you Own a Car?</label><br/>
+            
+            <label class="radio-inline">
+              <input type="radio" name="carYes" id="carYes" value="carYes"> Yes
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="carNo" id="carNo" value="carNO"> No
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="reset" class="btn btn-default">Clear</button>
+        </form>
+        </div><!--End col-->
+      </div><!--End row-->
       
+      <div class="row">
+        <div class="col-xs-12 col-md-5">
+        <h1>Html Validation</h1>
+        <form role="form">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter Your Address">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <select class="form-control" id="city">
+              <option value="seattle">Seattle</option>
+              <option value="renton">Renton</option>
+              <option value="kent">Kent</option>
+              <option value="everett">Everett</option>
+              <option value="other">Other</option>          
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+            <input type="email" class="form-control" ide="email2" placeholder="Verify Email">
+          </div>
+          <div class="form-group">
+            <label>Pets</label><br/>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="cats" value="cats"> Cats
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="dogs" value="dogs"> Dogs
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="other"> Other
+            </label>
+          </div>
+          <div class="form-group">
+            <label>Do you Own a Car?</label><br/>
+            
+            <label class="radio-inline">
+              <input type="radio" name="carYes" id="carYes" value="carYes"> Yes
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="carNo" id="carNo" value="carNO"> No
+            </label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="reset" class="btn btn-default">Clear</button>
+        </form>
+        </div><!--End col-->
+      </div><!--End row-->
+    </div><!--End container-->
       
-        <nav id="main-menu">
-					<ul>
-						<li><a href="index.html">Home</a>
-              
-            </li>
-						<li><a href="#">Classwork</a>
-              <ul>
-                <li><a href="http://willis-web130-126588.usw1-2.nitrousbox.com/classwork/01-css-dropdown/">Css Dropdown</a><li>
-                <li><a href="#">Classwork 2</a><li>  
-                <li><a href="#">Classwork 3</a><li>    
-              </ul>
-            </li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav> 
-    </header>      
-    <div id="main" class="contact">
-      <script>
-        document.write('<h1>Welcome ' + name + '</h1>');
-      </script>
-    </div>
-    <div id="side">
-      <ul>
-        <li>list</li>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-      </ul>
-    </div>
-    <footer>
-      <p>&copy;Eric &amp; Eric 2014</p>
-    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
