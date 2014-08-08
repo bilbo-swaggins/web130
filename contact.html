@@ -16,8 +16,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-      #email {
+      #email1 {
         margin-bottom:10px;
+      }
+      .error {
+        color:red;
       }
     </style>
   </head>
@@ -26,54 +29,74 @@
       <div class="row">
         <div class="col-xs-12 col-md-5">
         <h1>Jquery Validation</h1>
-        <form role="form">
+          
+        <form role="form" id="jsvalidate" method="get" action="success.html">
+          
+          <!--     First Name       -->
           <div class="form-group">
             <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name">
           </div>
+          
+          <!--     Last Name       -->
           <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Last Name">
           </div>
+          
+          <!--     Address       -->
           <div class="form-group">
             <label for="address">Address</label>
-            <input type="text" class="form-control" id="address" placeholder="Enter Your Address">
+            <input type="text" class="form-control" id="address" name="address" placeholder="Enter Your Address">
           </div>
+          
+          <!--     City      -->
           <div class="form-group">
             <label for="city">City</label>
-            <select class="form-control" id="city">
-              <option value="seattle">Seattle</option>
+            <select class="form-control" id="city" name="city">
+              <option value="">Choose One</option>
               <option value="renton">Renton</option>
               <option value="kent">Kent</option>
               <option value="everett">Everett</option>
               <option value="other">Other</option>          
             </select>
           </div>
+          
+          <!--     Zip       -->
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
-            <input type="email" class="form-control" ide="email2" placeholder="Verify Email">
+            <label for="zip">Zip Code</label>
+            <input type="text" class="form-control" name="zip" placeholder="Zip Code">
           </div>
+          <!--     Email      -->
+          <div class="form-group">
+            <label for="email1">Email</label>
+            <input type="email" class="form-control" id="email1" name="email1" placeholder="Enter Your Email">
+            <input type="email" class="form-control" id="email2" name="email2" placeholder="Verify Email">
+          </div>
+          
+          <!--     Checkbox       -->
           <div class="form-group">
             <label>Pets</label><br/>
             <label class="checkbox-inline">
-              <input type="checkbox" id="cats" value="cats"> Cats
+              <input type="checkbox" id="cats" value="cats" name="pets"> Cats
             </label>
             <label class="checkbox-inline">
-              <input type="checkbox" id="dogs" value="dogs"> Dogs
+              <input type="checkbox" id="dogs" value="dogs" name="pets"> Dogs
             </label>
             <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox3" value="other"> Other
+              <input type="checkbox" id="inlineCheckbox3" value="other" name="pets"> Other
             </label>
           </div>
+          
+          <!--     Radio       -->
           <div class="form-group">
             <label>Do you Own a Car?</label><br/>
             
             <label class="radio-inline">
-              <input type="radio" name="carYes" id="carYes" value="carYes"> Yes
+              <input type="radio" name="radio" id="carYes" value="carYes"> Yes
             </label>
             <label class="radio-inline">
-              <input type="radio" name="carNo" id="carNo" value="carNO"> No
+              <input type="radio" name="radio" id="carNo" value="carNO"> No
             </label>
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
@@ -81,70 +104,40 @@
         </form>
         </div><!--End col-->
       </div><!--End row-->
-      
-      <div class="row">
-        <div class="col-xs-12 col-md-5">
-        <h1>Html Validation</h1>
-        <form role="form">
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
-          </div>
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
-          </div>
-          <div class="form-group">
-            <label for="address">Address</label>
-            <input type="text" class="form-control" id="address" placeholder="Enter Your Address">
-          </div>
-          <div class="form-group">
-            <label for="city">City</label>
-            <select class="form-control" id="city">
-              <option value="seattle">Seattle</option>
-              <option value="renton">Renton</option>
-              <option value="kent">Kent</option>
-              <option value="everett">Everett</option>
-              <option value="other">Other</option>          
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
-            <input type="email" class="form-control" ide="email2" placeholder="Verify Email">
-          </div>
-          <div class="form-group">
-            <label>Pets</label><br/>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="cats" value="cats"> Cats
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="dogs" value="dogs"> Dogs
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox3" value="other"> Other
-            </label>
-          </div>
-          <div class="form-group">
-            <label>Do you Own a Car?</label><br/>
-            
-            <label class="radio-inline">
-              <input type="radio" name="carYes" id="carYes" value="carYes"> Yes
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="carNo" id="carNo" value="carNO"> No
-            </label>
-          </div>
-          <button type="submit" class="btn btn-default">Submit</button>
-          <button type="reset" class="btn btn-default">Clear</button>
-        </form>
-        </div><!--End col-->
-      </div><!--End row-->
+
     </div><!--End container-->
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/additional-methods.min.js"></script>
+    <script>
+      $("#jsvalidate").validate({
+        rules: {
+          firstName: "required",
+          lastName: "required",
+          address: "required",
+          city: "required",
+          zip: {
+            required: true,
+            minlength: 5
+          },
+          email1: {
+            required: true,
+            email:true
+          },
+          email2: {
+            required: true,
+            email:true,
+            equalTo: "#email1"
+          },
+          pets: "required",
+          radio: "required"
+          
+        }
+      });
+    </script>
   </body>
 </html>
