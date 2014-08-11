@@ -1,50 +1,137 @@
-<html>
-  <head>
-    <title>Eric Willis</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet/less" type="text/css" href="css/styles.less" >
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js" type="text/javascript"></script>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <h1>Hello World</h1>
-      <h2>Eric & Eric</h2>
-      
-        <nav id="main-menu">
-					<ul>
-						<li><a  class="firstNav" href="index.html">Home</a>
-              
-            </li>
-            <li><a href="#"> <i class="fa fa-caret-down"></i>Classwork</a>
-              <ul>
-                <li><a href="classwork/01-css-dropdown/">Css Dropdown</a><li>
-                <li><a href="classwork/02-Less/ex1">Less</a><li>  
-                <li><a href="classwork/03-LessNav">Less Nav Bar</a><li>
-                <li><a href="classwork/04-bootstrap">Bootstrap</a><li>    
-                <li><a href="classwork/05-validations">Validations</a><li>    
-              </ul>
-            </li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>    
-    </header>      
-    <div id="main">
-      <p>Bacon ipsum dolor sit amet tail sirloin venison flank. Landjaeger porchetta filet mignon bacon shankle drumstick chuck frankfurter pork belly. Chuck leberkas pastrami strip steak kielbasa venison swine. Shoulder biltong chicken short loin turducken strip steak. Meatloaf boudin turkey hamburger landjaeger sausage andouille t-bone pastrami tenderloin biltong ham.</p>
-    </div>
-    <div id="side">
-      <h3> Class work</h3>
-      <ul>
-        <li><a href="http://willis-web130-126588.usw1-2.nitrousbox.com/classwork/01-css-dropdown/">CSS dropdown </a></li>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-      </ul>
-    </div>
-    <footer>
-      <p>&copy;Eric &amp; Eric 2014</p>
-    </footer>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>It's a BLOG!</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- JS -->
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  
+  <style>
+    
+    header{
+      margin-top:80px;
+    }
+    
+  </style>
+</head>
+
+<body>
+   <div class="container">
+  <!-- Fixed navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Web130</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home</a>
+          </li>
+          <li><a href="about.html">About</a>
+          </li>
+          <li><a href="contact.html">Contact</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Classwork/Assignments <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li class="dropdown-header">Classwork</li>
+              <li><a href="classwork/01-css-dropdown/">Css Dropdown</a>
+              </li>
+              <li><a href="classwork/02-Less/ex1">Less</a>
+              </li>
+              <li><a href="classwork/03-LessNav/">Less Nav Bar</a>
+              </li>
+              <li><a href="classwork/04-bootstrap/">Bootstrap</a>
+              </li>
+              <li><a href="classwork/05-validations/">Validations</a>
+              </li>
+              
+              <li class="divider"></li>                
+              <li class="dropdown-header">Assignments</li>
+
+              
+              <li><a href="assignments/bootstrap">Bootstrap</a>
+              </li>
+              
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+    <header class="row">
+      
+
+      <!-- Main jumbotron -->
+      <div class="jumbotron">
+        
+        <div class="row">
+          <h1>Welcome</h1>
+          <p>This is the landing page for my Web 130 Class.</p>
+          
+        </div>
+      </div>
+      <!--End Jumbo -->
+    </header>
+
+    <div class="row">
+
+      <div class="col-md-9">
+        <h2>Content</h2>
+       
+        <p>Bacon ipsum dolor sit amet kielbasa meatloaf corned beef, tail filet mignon shank pork chop beef ribs cow prosciutto rump jerky. Chuck pork belly shoulder turducken, fatback kevin landjaeger pork chop chicken andouille hamburger pig boudin. Pork tongue tenderloin fatback tri-tip pork chop. Ground round sausage fatback doner, kevin leberkas pig venison prosciutto porchetta turkey bacon. Ribeye pork belly kevin, doner frankfurter pork loin ground round venison landjaeger salami tail boudin beef ribs chicken. Landjaeger shank cow pork chop, kevin pancetta biltong pork belly fatback porchetta.</p>
+        <p>Bacon pastrami turducken, salami cow swine pancetta shankle doner jerky ribeye shoulder biltong. Corned beef kielbasa andouille shoulder doner salami flank venison biltong ham hock landjaeger filet mignon turkey pig. Chuck ham turkey doner sirloin. Andouille short loin doner, sausage bacon jowl shank turducken biltong. Boudin ribeye doner ground round meatloaf. Andouille tenderloin pastrami sirloin corned beef venison frankfurter bresaola shankle brisket prosciutto tri-tip hamburger. Shoulder pancetta doner ham, turducken biltong ground round ball tip pork jowl t-bone beef ribs landjaeger filet mignon corned beef.</p>
+
+
+      </div>
+
+      <div class="col-md-3">
+        <h3>Sidebar</h3>
+        <div class="btn-group">
+          Sup Yo!
+        </div>
+
+      </div>
+      <div class="clearfix">
+
+      </div>
+      <footer class="row">
+        <p class="text-center">
+          &copy; Burning Heart Design
+        </p>
+      </footer>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
